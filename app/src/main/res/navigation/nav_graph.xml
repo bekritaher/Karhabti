@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.karhabtifinal.AccueilFragment"
+        android:label="fragment_accueil"
+        tools:layout="@layout/fragment_accueil" >
+        <action
+            android:id="@+id/accueil_to_Annonce"
+            app:destination="@id/annoncesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_Annonce"
+        android:name="com.example.karhabtifinal.AjouterAnnonceFragment"
+        android:label="fragment_modifierannonce"
+        tools:layout="@layout/fragment_modifierannonce" >
+        <action
+            android:id="@+id/ajouterAnnonce_to_annonces"
+            app:destination="@id/annoncesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.karhabtifinal.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/profile_to_modifierprofile"
+            app:destination="@id/modifierprofileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/modifierprofileFragment"
+        android:name="com.example.karhabtifinal.Accounts.ModifierprofileFragment"
+        android:label="fragment_modifierprofile"
+        tools:layout="@layout/fragment_modifierprofile" />
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.karhabtifinal.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" />
+    <fragment
+        android:id="@+id/annoncesFragment"
+        android:name="com.example.karhabtifinal.AnnoncesFragment"
+        android:label="fragment_annonces"
+        tools:layout="@layout/fragment_annonces" >
+        <action
+            android:id="@+id/annonces_to_details"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+</navigation>

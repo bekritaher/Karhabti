@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Accounts.Login">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/splash2"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="243dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="128dp"
+        android:font="@font/neoteric"
+        android:fontFamily="@font/poppinsbold"
+
+        android:text="Let's Log In"
+        android:textColor="@color/purple_700"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.386"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="242dp"
+        android:layout_height="44dp"
+
+        android:layout_marginTop="164dp"
+        android:font="@font/neoteric"
+        android:fontFamily="@font/poppinsregular"
+
+        android:text="Log In to your Karhabti Account"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/loginemail"
+        android:layout_width="311dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="20dp"
+        android:background="#FFFFFF"
+        android:hint="    E-mail"
+
+
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/loginpassw"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/loginpassw"
+        android:layout_width="311dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="92dp"
+        android:background="#FFFFFF"
+        android:hint="    Mot de passe"
+
+
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSuiv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/buttonSuiv"
+        android:layout_width="318dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="196dp"
+        android:fontFamily="@font/arial"
+        android:letterSpacing="0.2"
+        android:text="Suivant"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.559"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="144dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSuiv"
+        app:layout_constraintVertical_bias="0.055"
+
+        app:srcCompat="@drawable/fbb" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="144dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="136dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView8"
+        app:layout_constraintHorizontal_bias="0.573"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:srcCompat="@drawable/twitter" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
