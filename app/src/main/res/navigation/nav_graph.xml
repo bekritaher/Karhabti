@@ -24,6 +24,9 @@
             app:destination="@id/annoncesFragment" />
     </fragment>
 
+
+
+
     <fragment
         android:id="@+id/navigation_profile"
         android:name="com.example.karhabtifinal.ProfileFragment"
